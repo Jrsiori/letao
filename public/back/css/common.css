@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a , a:link , a:visited , a:hover , a:active {
+	text-decoration: none;
+}
+
+html , body {
+	height: 100%;
+}
+
+.body_bg {
+	background-color: #222d32;
+}
