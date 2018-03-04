@@ -79,7 +79,7 @@
 					</table>
 
 					<!--分页标签-->
-					<div class="text-center">
+					<div class="text-right">
 						<ul id="paginator"></ul>
 					</div>
 				</div>
@@ -105,6 +105,25 @@
 				</div>
 			</div>
 		</div>
+		
+		<!--启用禁用用户的模态框-->
+		<div class="modal fade" id="userModal" tabindex="-1">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+						<h4 class="modal-title">温馨提示</h4>
+					</div>
+					<div class="modal-body">
+						<p class="text-danger"><span class="glyphicon glyphicon-info-sign"></span> 确定要执行此操作吗？</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary btn_confirm">确认</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<script src="lib/jquery/jquery.min.js"></script>
 		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
@@ -113,7 +132,24 @@
 		<script src="lib/nprogress/nprogress.js"></script>
 		<script src="lib/artTemplate/template-web.js"></script>
 		<script src="js/common.js"></script>
-		<script src="js/index.js"></script>
+		<script src="js/user.js"></script>
+		<script type="text/template" id="tpl">
+			{{each rows v i}}
+			<tr>
+			    <td>{{(page-1)*size+i+1}}</td>
+			    <td>{{v.username}}</td>
+			    <td>{{v.mobile}}</td>
+			    <td>{{v.isDelete===1?'正常':'禁用'}}</td>
+			    <td data-id="{{v.id}}">
+			      {{if v.isDelete === 0}}
+			      <button class="btn btn-success btn-sm">启用</button>
+			      {{else}}
+			      <button class="btn btn-danger btn-sm">禁用</button>
+			      {{/if}}
+			    </td>
+			  </tr>
+			{{/each}}
+		</script>
 	</body>
 
 </html>
