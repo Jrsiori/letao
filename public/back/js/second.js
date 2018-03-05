@@ -13,6 +13,15 @@ $(function() {
 			success: function(info) {
 				//console.log(info);
 				$('tbody').html(template('tpl', info));
+				$('#paginator').bootstrapPaginator({
+					bootstrapMajorVersion: 3,
+					currentPage: page,
+					totalPages: Math.ceil(info.total / info.size),
+					onPageClicked: function(a, b, c, p) {
+						page = p;
+						render();
+					}
+				})
 			}
 		})
 	}
