@@ -80,7 +80,8 @@ body {
 
 .lt_aside .nav a.now {
 	background-color: #1d1f21;
-	color: #069;
+	color: #fff;
+	border-left: 3px solid #069;
 }
 
 .lt_aside .nav .second a {
