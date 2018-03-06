@@ -89,6 +89,7 @@ body {
 
 .lt_main {
 	padding-left: 180px;
+	padding-top: 70px;
 	width: 100%;
 	height: 100%;
 	transition: all 1s;
@@ -102,16 +103,11 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-<<<<<<< HEAD
-	width: 100%;
-=======
->>>>>>> debug
 	height: 50px;
 	line-height: 50px;
 	width: 100%;
 	background-color: #3c8dbc;
 	padding: 0 20px 0 200px;
-	margin-bottom: 20px;
 	transition: all 1s;
 }
 .lt_main .lt_header.now {
