@@ -106,3 +106,27 @@ img {
 	top: 10px;
 	border-radius: 0 5px 5px 0;
 }
+
+.product {
+	padding: 10px;
+}
+.product a {
+	float: left;
+	width: 49%;
+	border: 1px solid #ccc;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 2%;
+}
+.product a:nth-child(odd) {
+	margin-right: 2%;
+}
+.product a .price {
+	color: red;
+}
+.product a .oldPrice {
+	text-decoration: line-through;
+}
+.product .proName {
+	height: 40px;
+}

@@ -6,23 +6,4 @@
 	width: 33.33%;
 }
 
-.product {
-	padding: 10px;
-}
-.product a {
-	float: left;
-	width: 49%;
-	border: 1px solid #ccc;
-	padding: 10px;
-	text-align: center;
-	margin-bottom: 2%;
-}
-.product a:nth-child(odd) {
-	margin-right: 2%;
-}
-.product a .price {
-	color: red;
-}
-.product a .oldPrice {
-	text-decoration: line-through;
-}
+

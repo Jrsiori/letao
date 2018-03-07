@@ -57,7 +57,7 @@ $(function () {
 		}
 		arr.unshift(value);
 		localStorage.setItem('search_list' , JSON.stringify(arr));
-		render();
+		location.href = 'searchList.html?key=' + value;
 	})
 	
 })
