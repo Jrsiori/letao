@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>乐淘商城-登录页</title>
+		<link rel="stylesheet" type="text/css" href="lib/fa/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+	</head>
+
+	<body>
+		<div class="lt_container">
+			<!--头部-->
+			<div class="lt_header">
+				<a href="javascript:history.go(-1);" class="icon_left"><span class="mui-icon mui-icon-back"></span></a>
+				<h4>登录</h4>
+			</div>
+			<!--中心区域-->
+			<div class="lt_main">
+				<form class="mui-input-group">
+					<div class="mui-input-row">
+						<label>用户名</label>
+						<input type="text" name="username" class="mui-input-clear" placeholder="请输入用户名">
+					</div>
+					<div class="mui-input-row">
+						<label>密码</label>
+						<input type="password" name="password" class="mui-input-password" placeholder="请输入密码">
+					</div>
+					<div class="mui-button-row">
+						<button type="button" class="mui-btn mui-btn-primary btn_login">登录</button>
+						<button type="button" class="mui-btn mui-btn-danger">重置</button>
+					</div>
+				</form>
+				<a href="register" class="mui-pull-right" style="font-size: 12px; margin-top: 5px; margin-right: 10px;">立即注册</a>
+			</div>
+			<!--底部-->
+			<div class="lt_footer">
+				<ul class="mui-clearfix">
+					<li >
+						<a href="index.html">
+							<span class="fa fa-home"></span>
+							<p>首页</p>
+						</a>
+					</li>
+					<li>
+						<a href="category.html">
+							<span class="fa fa-bars"></span>
+							<p>分类</p>
+						</a>
+					</li>
+					<li>
+						<a href="cart.html">
+							<span class="fa fa-shopping-cart"></span>
+							<p>购物车</p>
+						</a>
+					</li>
+					<li class="now">
+						<a href="user.html">
+							<span class="fa fa-user"></span>
+							<p>会员中心</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<script src="lib/mui/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/zepto/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
