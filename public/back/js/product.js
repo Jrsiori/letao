@@ -147,10 +147,6 @@ $(function() {
 				validators : {
 					notEmpty : {
 						message : '请输入商品价格'
-					},
-					regexp : {
-						regexp : /^[1-9]\d*$/,
-						message : '请输入一个有效的商品价格'
 					}
 				}
 			},
