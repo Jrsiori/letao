@@ -1,0 +1,22 @@
+.myForm {
+	padding: 10px;
+}
+.myForm [name=vCode] {
+	width: 65%;
+}
+.myForm .btn_getcode {
+	width: 30%;
+	padding: 0;
+	height: 40px;
+	line-height: 40px;
+}
+.myForm .btn_getcode.disabled {
+	background-color: #999;
+	border: 1px solid #999;
+}
+.myForm .btn_register {
+	width: 100%;
+	padding: 0;
+	height: 40px;
+	line-height: 40px;
+}
