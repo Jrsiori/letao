@@ -14,6 +14,7 @@ $(function () {
 			
 			//给Info添加一个数组 用于渲染选择尺码的盒子
 			var tempArr = info.size.split('-');
+			console.log(tempArr);
 			var arr = [];
 			for (var i = +tempArr[0]; i <= tempArr[1]; i++) {
 				arr.push(i);
